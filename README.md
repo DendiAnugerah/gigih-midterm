@@ -36,12 +36,13 @@ There's 3 table in this database, whic is `videos`, `products`, and `comments`. 
 Object
 -URL Params: None
 -Data Params:
-`json
+
+    ```json
     {
     "thumbnail": "https://www.google.com",
     "title": "Test"
     }
-    `
+    ```
 
 - Headers: Content-Type: application/json
 - Success Response:
@@ -56,6 +57,8 @@ Object
     "__v": 0
   }
   ```
+
+````
 
 #### GET /videos
 
@@ -204,3 +207,4 @@ Object
 4. Run `npm start`
 5. Open `http://localhost:3000` in your browser
 6. Enjoy!
+````

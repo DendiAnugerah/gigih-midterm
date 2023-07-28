@@ -58,8 +58,6 @@ Object
   }
   ```
 
-````
-
 #### GET /videos
 
 Object
@@ -207,4 +205,7 @@ Object
 4. Run `npm start`
 5. Open `http://localhost:3000` in your browser
 6. Enjoy!
-````
+
+```
+
+```

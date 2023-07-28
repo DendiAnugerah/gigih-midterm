@@ -23,7 +23,7 @@ app.get("/videos", videoHandler.getListVideo);
 app.post("/products", productHandler.createProduct);
 app.get("/products", productHandler.getListProduct);
 
-app.post("/comments", commentHandler.createComment);
+app.post("/comments/:userId", commentHandler.createComment);
 app.get("/comments", commentHandler.getListComment);
 app.listen(3000, () => {
   console.log("Server is running on port 3000");

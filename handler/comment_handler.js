@@ -15,15 +15,15 @@ exports.createComment = async (req, res) => {
 };
 
 exports.getListComment = async (req, res) => {
-    try {
-        const videoId = req.query.videoId;
-    
-        const commentService = new CommentService();
-    
-        const comments = await commentService.getListComment(videoId);
-    
-        res.status(200).json(comments);
-    } catch (error) {
-        res.status(500).json({ message: error.message });
-    }
-}
+  try {
+    const videoId = req.query.videoId;
+
+    const commentService = new CommentService();
+
+    const comments = await commentService.getListComment(videoId);
+
+    res.status(200).json(comments);
+  } catch (error) {
+    res.status(500).json({ message: error.message });
+  }
+};

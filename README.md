@@ -36,7 +36,7 @@ There's 3 table in this database, whic is `videos`, `products`, and `comments`. 
 Object
 
 - URL Params: None
-- Data Params: None
+- Data Params: 
 
   ```json
   {

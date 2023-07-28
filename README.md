@@ -36,7 +36,7 @@ There's 3 table in this database, whic is `videos`, `products`, and `comments`. 
 Object
 
 - URL Params: None
-- Data Params: 
+- Data Params:
 
   ```json
   {
@@ -81,16 +81,16 @@ Object
 
 ### Comments
 
-| Method | Endpoint  | Description        |
-| ------ | --------- | ------------------ |
-| POST   | /comments | Create new comment |
-| GET    | /comments | Get all comments   |
+| Method | Endpoint           | Description        |
+| ------ | ------------------ | ------------------ |
+| POST   | /comments/:videoId | Create new comment |
+| GET    | /comments/:videoId | Get all comments   |
 
 #### POST /comments
 
 Object
 
-- URL Params: videoId=[string]
+- URL Params: None
 - Data Params:
   ```json
   {
@@ -114,7 +114,7 @@ Object
 
 #### GET /comments
 
-- URL Params: videoId=[string]
+- URL Params: None
 - Data Params: None
 - Headers: Content-Type: application/json
 - Success Response:
@@ -139,14 +139,14 @@ Object
 
 ### Products
 
-| Method | Endpoint  | Description        |
-| ------ | --------- | ------------------ |
-| POST   | /products | Create new product |
-| GET    | /products | Get all products   |
+| Method | Endpoint           | Description        |
+| ------ | ------------------ | ------------------ |
+| POST   | /products/:videoId | Create new product |
+| GET    | /products/:videoId | Get all products   |
 
 #### POST /products
 
-- URL Params: videoId=[string]
+- URL Params: None
 - Data Params:
   ```json
   {
@@ -173,7 +173,7 @@ Object
 
 #### GET /products
 
-- URL Params: videoId=[string]
+- URL Params: None
 - Data Params: None
 - Headers: Content-Type: application/json
 - Success Response:

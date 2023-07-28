@@ -2,7 +2,7 @@ const CommentService = require("../service/comment_service");
 
 exports.createComment = async (req, res) => {
   try {
-    const videoId = req.query.videoId;
+    const videoId = req.params.videoId;
 
     const commentService = new CommentService();
 
@@ -16,7 +16,7 @@ exports.createComment = async (req, res) => {
 
 exports.getListComment = async (req, res) => {
   try {
-    const videoId = req.query.videoId;
+    const videoId = req.params.videoId;
 
     const commentService = new CommentService();
 

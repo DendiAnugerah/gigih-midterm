@@ -2,7 +2,7 @@ const ProductService = require("../service/product_service");
 
 exports.createProduct = async (req, res) => {
   try {
-    const videoId = req.query.videoId;
+    const videoId = req.params.videoId;
 
     const productService = new ProductService();
 
@@ -16,7 +16,7 @@ exports.createProduct = async (req, res) => {
 
 exports.getListProduct = async (req, res) => {
   try {
-    const videoId = req.query.videoId;
+    const videoId = req.params.videoId;
 
     const productService = new ProductService();
 

@@ -20,11 +20,11 @@ app.post("/users", userHandler.createUser);
 app.post("/videos", videoHandler.createVideo);
 app.get("/videos", videoHandler.getListVideo);
 
-app.post("/products", productHandler.createProduct);
-app.get("/products", productHandler.getListProduct);
+app.post("/products/:videoId", productHandler.createProduct);
+app.get("/products/:videoId", productHandler.getListProduct);
 
-app.post("/comments", commentHandler.createComment);
-app.get("/comments", commentHandler.getListComment);
+app.post("/comments/:videoId", commentHandler.createComment);
+app.get("/comments/:videoId", commentHandler.getListComment);
 app.listen(3000, () => {
   console.log("Server is running on port 3000");
 });

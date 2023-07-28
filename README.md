@@ -34,15 +34,16 @@ There's 3 table in this database, whic is `videos`, `products`, and `comments`. 
 #### POST /videos
 
 Object
--URL Params: None
--Data Params:
 
-    ```json
-    {
+- URL Params: None
+- Data Params: None
+
+  ```json
+  {
     "thumbnail": "https://www.google.com",
     "title": "Test"
-    }
-    ```
+  }
+  ```
 
 - Headers: Content-Type: application/json
 - Success Response:
@@ -199,13 +200,12 @@ Object
 
 ## How to run
 
+```
 1. Clone this repo
 2. Run `npm install`
 3. Change the `.env.example` to `.env` and fill the value with your own mongodb url
 4. Run `npm start`
 5. Open `http://localhost:3000` in your browser
 6. Enjoy!
-
-```
 
 ```

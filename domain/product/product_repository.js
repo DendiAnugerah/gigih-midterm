@@ -7,6 +7,7 @@ class ProductRepository {
       const newProduct = new product({
         id: uuid.v4(),
         link: payload.link,
+        imageUrl: payload.imageUrl,
         title: payload.title,
         price: payload.price,
         videoId: payload.videoId,

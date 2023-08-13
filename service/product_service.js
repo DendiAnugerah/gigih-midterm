@@ -9,6 +9,7 @@ class ProductService {
     try {
       return await this.productRepository.createProduct({
         link: product.link,
+        imageUrl: product.imageUrl,
         title: product.title,
         price: product.price,
         videoId: videoId,

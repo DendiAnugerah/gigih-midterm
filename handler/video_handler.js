@@ -2,12 +2,13 @@ const VideoService = require("../service/video_service");
 
 exports.createVideo = async (req, res) => {
   try {
-    const { thumbnail, title } = req.body;
+    const { thumbnail, title, link } = req.body;
 
     const videoService = new VideoService();
     const video = await videoService.createVideo({
       thumbnail,
       title,
+      link,
     });
 
     res.status(201).json(video);
@@ -26,4 +27,3 @@ exports.getListVideo = async (req, res) => {
     res.status(500).json({ message: error.message });
   }
 };
-

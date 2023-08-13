@@ -8,6 +8,7 @@ class VideoRepository {
         id: uuid.v4(),
         thumbnail: payload.thumbnail,
         title: payload.title,
+        link: payload.link,
       });
 
       return newVideo.save();
@@ -18,7 +19,7 @@ class VideoRepository {
 
   async getListVideo() {
     try {
-      const videos = video.find({}, "id thumbnail").lean();
+      const videos = video.find({}, "id thumbnail title").lean();
       return videos;
     } catch (error) {
       throw error;

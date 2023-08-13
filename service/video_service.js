@@ -12,6 +12,7 @@ class VideoService {
         id: uuid.v4(),
         thumbnail: video.thumbnail,
         title: video.title,
+        link: video.link,
       });
     } catch (error) {
       throw error;

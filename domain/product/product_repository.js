@@ -21,7 +21,7 @@ class ProductRepository {
 
   async getListProduct(videoId) {
     try {
-      const products = product.find({ videoId }, "id link title price").lean();
+      const products = product.find({ videoId }, "id link imageUrl title price").lean();
       return products;
     } catch (error) {
       throw error;

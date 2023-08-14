@@ -24,6 +24,7 @@ app.post("/users", userHandler.createUser);
 
 app.post("/videos", videoHandler.createVideo);
 app.get("/videos", videoHandler.getListVideo);
+app.get("/videos/:id", videoHandler.getVideoById);
 
 app.post("/products/:videoId", productHandler.createProduct);
 app.get("/products/:videoId", productHandler.getListProduct);

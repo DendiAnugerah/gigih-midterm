@@ -27,3 +27,16 @@ exports.getListVideo = async (req, res) => {
     res.status(500).json({ message: error.message });
   }
 };
+
+exports.getVideoById = async (req, res) => {
+  try {
+    const id = req.params.id;
+
+    const videoService = new VideoService();
+    const video = await videoService.getVideoById(id);
+
+    res.status(200).json(video);
+  } catch (error) {
+    res.status(500).json({ message: error.message });
+  }
+};

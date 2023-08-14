@@ -19,7 +19,16 @@ class VideoRepository {
 
   async getListVideo() {
     try {
-      const videos = video.find({}, "id thumbnail title").lean();
+      const videos = video.find({}, "id thumbnail title link").lean();
+      return videos;
+    } catch (error) {
+      throw error;
+    }
+  }
+
+  async getVideoById(id) {
+    try {
+      const videos = await video.findOne({ id }, "id thumbnail title link").lean();
       return videos;
     } catch (error) {
       throw error;

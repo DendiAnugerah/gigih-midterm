@@ -26,6 +26,14 @@ class VideoService {
       throw error;
     }
   }
+
+  async getVideoById(id) {
+    try {
+      return await this.videoRepository.getVideoById(id);
+    } catch (error) {
+      throw error;
+    }
+  }
 }
 
 module.exports = VideoService;
